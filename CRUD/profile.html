@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Charts - SB Admin</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Layouts
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Pages
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Authentication
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                        </nav>
+                                    </div>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        Error
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="401.html">401 Page</a>
+                                            <a class="nav-link" href="404.html">404 Page</a>
+                                            <a class="nav-link" href="500.html">500 Page</a>
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Addons</div>
+                            <a class="nav-link" href="charts.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Charts
+                            </a>
+                            <a class="nav-link" href="charts.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Profile
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Tables
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="col">
+                        <div class="row">
+                          <div class="col mb-3">
+                            <div class="card">
+                              <div class="card-body">
+                                <div class="e-profile">
+                                  <div class="row">
+                                    <div class="col-12 col-sm-auto mb-3">
+                                      <div class="mx-auto" style="width: 140px;">
+                                        <div class="d-flex justify-content-center align-items-center rounded" style="height: 140px; background-color: rgb(233, 236, 239);">
+                                          <span style="color: rgb(166, 168, 170); font: bold 8pt Arial;">140x140</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
+                                      <div class="text-center text-sm-left mb-2 mb-sm-0">
+                                        <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">John Smith</h4>
+                                        <p class="mb-0">@johnny.s</p>
+                                        <div class="text-muted"><small>Last seen 2 hours ago</small></div>
+                                        <div class="mt-2">
+                                          <button class="btn btn-primary" type="button">
+                                            <i class="fa fa-fw fa-camera"></i>
+                                            <span>Change Photo</span>
+                                          </button>
+                                        </div>
+                                      </div>
+                                      <div class="text-center text-sm-right">
+                                        <span class="badge badge-secondary">administrator</span>
+                                        <div class="text-muted"><small>Joined 09 Dec 2017</small></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <ul class="nav nav-tabs">
+                                    <li class="nav-item"><a href="" class="active nav-link">Settings</a></li>
+                                  </ul>
+                                  <div class="tab-content pt-3">
+                                    <div class="tab-pane active">
+                                      <form class="form" novalidate="">
+                                        <div class="row">
+                                          <div class="col">
+                                            <div class="row">
+                                              <div class="col">
+                                                <div class="form-group">
+                                                  <label>Full Name</label>
+                                                  <input class="form-control" type="text" name="name" placeholder="John Smith" value="John Smith">
+                                                </div>
+                                              </div>
+                                              <div class="col">
+                                                <div class="form-group">
+                                                  <label>Username</label>
+                                                  <input class="form-control" type="text" name="username" placeholder="johnny.s" value="johnny.s">
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col">
+                                                <div class="form-group">
+                                                  <label>Email</label>
+                                                  <input class="form-control" type="text" placeholder="user@example.com">
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col mb-3">
+                                                <div class="form-group">
+                                                  <label>About</label>
+                                                  <textarea class="form-control" rows="5" placeholder="My Bio"></textarea>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-12 col-sm-6 mb-3">
+                                            <div class="mb-2"><b>Change Password</b></div>
+                                            <div class="row">
+                                              <div class="col">
+                                                <div class="form-group">
+                                                  <label>Current Password</label>
+                                                  <input class="form-control" type="password" placeholder="••••••">
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col">
+                                                <div class="form-group">
+                                                  <label>New Password</label>
+                                                  <input class="form-control" type="password" placeholder="••••••">
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col">
+                                                <div class="form-group">
+                                                  <label>Confirm <span class="d-none d-xl-inline">Password</span></label>
+                                                  <input class="form-control" type="password" placeholder="••••••"></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-12 col-sm-5 offset-sm-1 mb-3">
+                                            <div class="mb-2"><b>Keeping in Touch</b></div>
+                                            <div class="row">
+                                              <div class="col">
+                                                <label>Email Notifications</label>
+                                                <div class="custom-controls-stacked px-2">
+                                                  <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="notifications-blog" checked="">
+                                                    <label class="custom-control-label" for="notifications-blog">Blog posts</label>
+                                                  </div>
+                                                  <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="notifications-news" checked="">
+                                                    <label class="custom-control-label" for="notifications-news">Newsletter</label>
+                                                  </div>
+                                                  <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="notifications-offers" checked="">
+                                                    <label class="custom-control-label" for="notifications-offers">Personal Offers</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col d-flex justify-content-end">
+                                            <button class="btn btn-primary" type="submit">Save Changes</button>
+                                          </div>
+                                        </div>
+                                      </form>
+                    
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="assets/demo/chart-pie-demo.js"></script>
+    </body>
+</html>

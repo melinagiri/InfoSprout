@@ -1,0 +1,56 @@
+<?php 
+  session_start();    
+    $host = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "InfoSprout_db";
+    $connection = mysqli_connect($host, $username, $password, $database, 3306);
+
+    // $connection = mysqli_connect("localhost","root","","new_info", 3306);
+    
+    //3306 is default port used.
+    
+    // Check connection
+
+    // if(!$connection){
+    //   echo "Failed to connect to MySQL!<br>".mysqli_connect_error();
+    // }else{      
+    //   //connect db
+      
+    //   $database = mysqli_select_db($connection, "InfoSprout_db");
+    //   if(!$database){
+    //     echo "Failed to connect to db";
+    //   }
+    //   else{
+    //     echo "db and server connected";
+    //   }
+    // }
+    
+    // $db = mysqli_select_db($connection, "InfoSprout_db");
+    // if($db){
+    //   $query="SELECT * FROM register";
+    //   $query_result = mysqli_query($connection,$query);
+    //   if($query_result){
+    //     while($f = mysqli_fetch_array($query_result)){
+    //       echo $f['FirstName'];
+    //     }
+    //   }
+    // }
+
+    // $query = "DROP DATABASE melina";
+    // $query_run = mysqli_query($connection, $query);
+    // if($query_run){
+    //   echo "db created successfully";
+    // }else{
+    //   echo "db creation unsuccessful";
+    // }
+    
+    // $query="INSERT into register(FirstName,LastName,UserName,Email,Password,Gender,Category_type) VALUES('$first_name','$last_name','$user_name','$e_mail','$password','$gender','$category_type')";  
+    // if(mysqli_query($connection, $query)){
+    //   echo "insertion successful";
+    // }else{
+    //   echo "insertion unsuccessful";
+    // }  
+?>        
+        
+        
