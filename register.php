@@ -37,7 +37,8 @@
 
 <body>
     <form method="POST" enctype="multipart/form-data">
-        <h3>Register Account</h3>
+        
+    
         <div>
             <input name="FirstName" type="text" placeholder="Enter your first name" />
             <label>First name</label>
