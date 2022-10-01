@@ -21,11 +21,10 @@
 
         $query="INSERT into register(FirstName,LastName,UserName,Email,Password,Gender,Category_type) VALUES('$first_name','$last_name','$user_name','$e_mail','$password','$gender','$category_type')";          
         if(mysqli_query($connection,$query)){
-            echo '<script type ="text/JavaScript">';  
-            echo 'alert("insertion successful now you redirect to login page")';
-            echo '</script>';  
             
+            echo "insertion successful now you redirect to login page";
             
+            header('location:login.php');
         }else{
             echo "insertion unsuccessful";
         }        
@@ -87,7 +86,7 @@
         </div>  
         
         <div>
-            <input name="Submit" type="submit" value="Create Account">
+            <input name="Submit" type="submit" value="Create Account"/>
         </div>
         
     </form>

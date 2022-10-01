@@ -29,17 +29,17 @@
     // $db = mysqli_select_db($connection, "InfoSprout_db");
     // if($db){
     //   $query="SELECT * FROM register";
-    //   $query_result = mysqli_query($connection,$query);
-    //   if($query_result){
-    //     while($f = mysqli_fetch_array($query_result)){
+    //   $query_connect = mysqli_query($connection,$query);
+    //   if($query_connect){
+    //     while($f = mysqli_fetch_array($query_connect)){
     //       echo $f['FirstName'];
     //     }
     //   }
     // }
 
     // $query = "DROP DATABASE melina";
-    // $query_run = mysqli_query($connection, $query);
-    // if($query_run){
+    // $query_connect = mysqli_query($connection, $query);
+    // if($query_connect){
     //   echo "db created successfully";
     // }else{
     //   echo "db creation unsuccessful";
