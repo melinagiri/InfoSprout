@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Register - InfoSprout</title>
+</head>
+
+<body>
+    <form action="register.php" method="POST" enctype="multipart/form-data">
+        <h3>Register Account</h3>
+        <div>
+            <label>First name</label>
+            <input name="FirstName" type="text" placeholder="Enter your first name" required/>            
+        </div>
+
+        <div>
+            <label>Last name</label>
+            <input name="LastName" type="text" placeholder="Enter your last name" required/>            
+        </div>
+
+        <div>
+            <label>Username</label>
+            <input name="UserName" type="text" placeholder="Create an username" required/>            
+        </div>
+
+        <div>
+            <label>Email address</label>
+            <input name="Email" type="email" placeholder="name@example.com" required/>            
+        </div>
+
+        <div>
+            <label>Password</label>
+            <input name="Password" type="password" placeholder="Create a password" required/>            
+        </div>
+
+        <div>
+            <label>Confirm Password</label>
+            <input name="Confirm_Password" type="password" placeholder="Confirm password" required/>            
+        </div>    
+
+        <div>
+            Gender: <input name="Gender" type="radio" value="male" />Male
+            <input name="Gender" type="radio" value="female" />Female
+        </div>
+
+        <!-- <div>
+            <label>Category type:</label>
+            <select name="Category_type">
+                <option value="User">User</option>
+                <option value="Admin">Admin</option>
+            </select>
+        </div>   -->
+
+        <div>
+            Profile Image: <input type="file" name="Profile_file" />
+        </div>  
+        
+        <div>
+            <input name="Submit" type="submit" value="Create Account"/>
+        </div>
+        
+    </form>
+
+    <div>
+        <a href="login.php">Have an account? Go to login</a>
+    </div>
+
+</body>
+
+</html>

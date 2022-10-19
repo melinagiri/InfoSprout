@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title>Admin - InfoSprout</title>
+</head>
+
+<body>
+    <form action="admin.php" method="POST" enctype="multipart/form-data">
+        <h3>Hello Admin!!</h3>
+        <h2>Karyalaya</h2>
+        <div>
+            <label>Username</label>
+            <input name="UserName" type="text" placeholder="Search an username" required/>            
+        </div>
+        <div>
+            <label>Role:</label>
+            <select name="Role">
+                <option value="Accountant">Accountant</option>
+                <option value="Secretary">Secretary</option>
+                <option value="Chairmen">Chairmen</option>
+                <option value="Admin">Admin</option>
+            </select>
+        </div> 
+
+        <div>
+            <label>Select District:</label>
+            <select name="District">
+                <option value="Lalitpur">Lalitpur</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Bhaktapur">Bhaktapur</option>
+                <option value="Saptari">Saptari</option>
+            </select>
+        </div> 
+        <div>
+            <label>Ward No:</label>
+            <select name="Ward_no">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div> 
+        <div>
+            <label>Province No:</label>
+            <select name="Province_no">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>  
+        
+        <div>
+            <input name="Submit" type="submit" value="Create Account"/>
+        </div>
+        
+    </form>
+
+    <div>
+        <a href="login.php">Have an account? Go to login</a>
+    </div>
+
+</body>
+
+</html>

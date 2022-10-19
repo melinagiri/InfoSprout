@@ -3,23 +3,23 @@ include 'connect.php';
 if(isset($_POST['Submit'])){
     $user_name=$_POST['UserName'];
     $password=md5($_POST['Password']);
-    $query= "SELECT * from register where UserName='$user_name' AND Password='$password'";  
-    
-    $query_connect = mysqli_query($connection,$query);
-    if(mysqli_num_rows($query_connect)>0){
+    $query= $db->query("SELECT * from register where UserName='$user_name' AND Password='$password'");  
 
-        $fetch_array= mysqli_fetch_array($query_connect);
+    if($query->num_rows > 0){
+        $row = $query->fetch_assoc();
 
-        if($fetch_array['Category_type']=="Admin"){
-            header('location:admin.php');
-        }if($fetch_array['Category_type']=="User"){
-            header('location:user.php');
+        if($row['Category_type']=="Admin"){
+            header('location:admin.html');  
+
+        }elseif($row['Category_type']=="User"){
+            header('location:user.html');
+            
         }else{
-            echo "such category doesn't exist.";
+            echo "Such category doesn't exist!!";
         }
         
     }else{
-        echo 'username or password does not exist';
+        echo 'Username or password does not exist!!!';
     }
 }
 ?>

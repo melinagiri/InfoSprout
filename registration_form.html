@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration Form - InfoSprout</title>
+</head>
+
+<body>
+    <form action="registration_form.php" method="POST" enctype="multipart/form-data">
+        <h3>Birth Registration Form</h3>
+        <div>
+            <label>First name</label>
+            <input name="First_name" type="text" placeholder="Enter your first name" />            
+        </div>
+
+        <div>
+            <label>Middle name</label>
+            <input name="Middle_name" type="text" placeholder="Enter your middle name" />            
+        </div>
+
+        <div>
+            <label>Last name</label>
+            <input name="Last_name" type="text" placeholder="Enter your last name" />            
+        </div>
+
+        <div>
+            <label>Birth Date</label>
+            <input name="Birth_date" type="text" placeholder="Enter child's birth date" />            
+        </div>
+
+        <div>
+            <label>Birth Day</label>
+            <input name="Birth_day" type="text" placeholder="Enter child's birth day" />            
+        </div>
+
+        <div>
+            <label>Birth Time</label>
+            <input name="Birth_time" type="text" placeholder="Enter child's birth time" />            
+        </div>
+
+        <div>
+            <label>Place of Birth:</label>
+            <select name="Birth_place">
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Lalitpur">Lalitpur</option>
+            </select>
+        </div> 
+
+        <div>
+            <label>Baby Weight</label>
+            <input name="Baby_weight" type="text" placeholder="Enter baby weight" />            
+        </div>
+
+        <div>
+            <label>Gender:</label> 
+            <input name="Gender" type="radio" value="male" />Male
+            <input name="Gender" type="radio" value="female" />Female
+        </div>
+        
+        <div>
+            <label>Email address</label>
+            <input name="Email" type="email" placeholder="name@example.com" />            
+        </div>  
+
+        <div>
+            <label>Contact No.</label>
+            <input name="Contact_no" type="text" placeholder="Enter your contact no." />            
+        </div>
+
+        <div>
+            <label>Citizenship No.</label>
+            <input name="Citizenship_no" type="text" placeholder="Enter your citizeship number" />            
+        </div>
+        
+        <div>
+            <label>Upload Citizenship</label>
+            <input type="file" name="Citizenship_file" />
+        </div>
+        
+        <div>
+            <input name="Submit" type="submit" value="Submit"/>
+        </div>
+        
+    </form>
+
+    <div>
+        <a href="login.php">Logout</a>
+        <a href="login.php">Login</a>
+        <!-- <a href="login.php">Home</a> -->
+    </div>
+
+</body>
+
+</html>
